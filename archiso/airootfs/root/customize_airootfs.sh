@@ -1,32 +1,26 @@
 #!/bin/bash
-# This script is executed when the image is booted as the root user.
-# Global variables (defined in /etc/profile.d/endeavour-env.sh) are available.
+# archiso customize_airootfs script
 
 set -e -u
 
-# Enable kernel hardening on boot
-echo "[*] Applying kernel hardening..."
-if [[ -f /etc/sysctl.d/99-hardening.conf ]]; then
-    sysctl -p /etc/sysctl.d/99-hardening.conf > /dev/null 2>&1 || true
-fi
+echo "[*] Customizing archiso root filesystem..."
 
-echo "[*] Setting up networking..."
-# Enable systemd-networkd
-systemctl enable systemd-networkd.service systemd-resolved.service
+# Set timezone
+ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
-echo "[*] Configuring UFW firewall..."
-if command -v ufw &> /dev/null; then
-    systemctl enable ufw.service || true
-fi
+# Set locale
+sed -i 's/#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
+locale-gen
 
-echo "[*] Setting up privacy services..."
-# Enable dnscrypt-proxy
-systemctl enable dnscrypt-proxy.service || true
+# Set hostname
+echo "endeavour-privacy" > /etc/hostname
 
-# Enable MAC spoofing
-if command -v macchanger &> /dev/null; then
-    systemctl enable macspoof@eth0.service || true
-    systemctl enable macspoof@wlan0.service || true
-fi
+# Enable services
+systemctl enable systemd-networkd.service
+systemctl enable systemd-resolved.service
+systemctl enable getty@tty1.service
 
-echo "[*] Initial setup complete!"
+# Kernel hardening on boot
+sysctl -p /etc/sysctl.d/99-hardening.conf > /dev/null 2>&1 || true
+
+echo "[✓] Customization complete"
