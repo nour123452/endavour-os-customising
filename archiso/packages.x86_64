@@ -47,6 +47,10 @@ kdoctools
 kcalc
 kcharselect
 
+# Installer
+calamares
+ckbcomp
+
 # Privacy tools
 macchanger
 inotify-tools
@@ -55,9 +59,9 @@ ufw
 openssh
 
 # Browser & apps
-firefox
+helium-browser-bin
 thunderbird
-keepass2
+keepass
 vlc
 
 # Network
