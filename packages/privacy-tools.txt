@@ -1,0 +1,28 @@
+# Cloudflare WARP
+cloudflare-warp
+
+# MAC Spoofing
+macchanger
+inotify-tools
+
+# DNS Privacy
+dnscrypt-proxy
+
+# Firewall
+ufw
+
+# Browser
+waterfox-bin
+
+# Secure Communication
+thunderbird
+keepass
+jami
+
+# Media
+vlc
+
+# Core Utilities
+openssh
+curl
+wget

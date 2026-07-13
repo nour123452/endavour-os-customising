@@ -1,0 +1,38 @@
+# Core Utilities
+coreutils
+util-linux
+e2fsprogs
+parted
+fdisk
+gparted
+
+# Compression
+gzip
+bzip2
+xz
+zstd
+
+# Text Processing
+grep
+sed
+awk
+findutils
+
+# Editors
+nano
+vim
+
+# Shells
+bash
+zsh
+
+# System
+sysstat
+lsof
+btop
+
+# Archives
+tar
+unzip
+zip
+p7zip

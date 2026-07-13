@@ -1,0 +1,31 @@
+# DNSCrypt-proxy configuration
+# Provides encrypted DNS over HTTPS or DNS-over-TLS
+
+listens = ['127.0.0.1:53000']
+user_name = 'dnscrypt-proxy'
+
+# Cloudflare DNS (compatible with WARP)
+server_names = ['cloudflare', 'cloudflare-ipv6']
+
+# DoH providers
+fallback_resolvers = ['1.1.1.1:53', '8.8.8.8:53']
+
+# Logging
+log_level = 2
+log_file = '/var/log/dnscrypt-proxy/dnscrypt-proxy.log'
+
+# Security
+block_ipv6 = false
+block_unqualified = true
+block_undelegated = true
+
+# Cache
+cache = true
+cache_size = 256
+cache_min_ttl = 600
+cache_max_ttl = 86400
+cache_neg_ttl = 60
+
+# Timeouts
+timeout = 2500
+keep_alive = 30

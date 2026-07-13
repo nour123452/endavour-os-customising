@@ -1,0 +1,16 @@
+# Network Configuration
+networkmanager
+networkmanager-openvpn
+dhclient
+dhcpcd
+
+# Network Tools
+iproute2
+iputils
+wireless_tools
+wpa_supplicant
+nm-connection-editor
+
+# DNS
+bind-tools
+whois

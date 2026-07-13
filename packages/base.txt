@@ -1,0 +1,11 @@
+# Base System Packages
+base
+linux-hardened
+linux-firmware
+mkinitcpio
+initramfs
+
+# Boot & EFI
+edk2-shell
+grub
+efibootmgr

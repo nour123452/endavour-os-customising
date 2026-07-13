@@ -1,0 +1,32 @@
+# KDE Plasma Desktop Environment
+plasma-desktop
+plasma-workspace
+plasma-workspace-wallpapers
+sddm
+sddm-kcm
+
+# KDE Frameworks
+breeze
+breeze-icons
+breeze-gtk
+kde-cli-tools
+kdeconnect
+kscreen
+plasma-nm
+plasma-pa
+plasma-firewall
+
+# KDE Applications
+dolphin
+konsole
+okular
+spectacle
+karchive
+kconfig
+kcoreaddons
+kdbusaddons
+kded
+kdelibs4support
+kdoctools
+kcalc
+kcharselect
