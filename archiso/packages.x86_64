@@ -1,0 +1,129 @@
+# Arch Linux archiso packages file
+# Packages to include in the live environment
+
+# Base system
+base
+linux-hardened
+linux-firmware
+mkinitcpio
+initramfs
+
+# Boot
+edk2-shell
+grub
+efibootmgr
+memtest86+
+
+# Syslinux boot
+syslinux
+dd
+
+# KDE Plasma
+plasma-desktop
+plasma-workspace
+plasma-workspace-wallpapers
+sddm
+sddm-kcm
+breeze
+breeze-icons
+breeze-gtk
+kde-cli-tools
+kdeconnect
+kscreen
+plasma-nm
+plasma-pa
+plasma-firewall
+
+# KDE Applications
+dolphin
+konsole
+okular
+spectacle
+karchive
+kconfig
+kcoreaddons
+kdbusaddons
+kded
+kdelibs4support
+kdoctools
+kcalc
+kcharselect
+
+# Privacy tools
+cloudflare-warp
+macchanger
+inotify-tools
+dnscrypt-proxy
+ufw
+openssh
+
+# Browser & apps
+waterfox-bin
+thunderbird
+keepass
+jami
+vlc
+
+# Network
+networkmanager
+networkmanager-openvpn
+dhclient
+dhcpcd
+iproute2
+iputils
+wireless_tools
+wpa_supplicant
+nm-connection-editor
+bind-tools
+whois
+curl
+wget
+
+# Utilities
+coreutils
+util-linux
+e2fsprogs
+parted
+fdisk
+gparted
+gzip
+bzip2
+xz
+zstd
+grep
+sed
+gawk
+findutils
+nano
+vim
+bash
+zsh
+sysstat
+lsof
+btop
+tar
+unzip
+zip
+p7zip
+
+# System tools
+pacman
+grub
+efibootmgr
+dosfstools
+mtools
+udev
+systemd
+systemd-sysvcompat
+devtoolset
+
+# Filesystem
+btrfs-progs
+exfatprogs
+f2fs-tools
+ntfs-3g
+
+# Additional
+man-db
+man-pages
+texinfo

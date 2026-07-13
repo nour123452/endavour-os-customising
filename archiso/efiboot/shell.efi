@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+# UEFI startup script for archiso
+echo 'Endeavour OS Privacy Edition - UEFI Boot'
