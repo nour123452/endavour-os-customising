@@ -1,0 +1,13 @@
+[Unit]
+Description=MAC Address Spoofer for %i
+After=network-pre.target
+Before=network.target
+ConditionVirtualization=!container
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/macchanger -r %i
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
