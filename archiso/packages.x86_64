@@ -48,8 +48,7 @@ kcalc
 kcharselect
 
 # Installer
-calamares
-ckbcomp
+archinstall
 
 # Privacy tools
 macchanger
@@ -59,7 +58,7 @@ ufw
 openssh
 
 # Browser & apps
-helium-browser-bin
+firefox
 thunderbird
 keepass
 vlc
