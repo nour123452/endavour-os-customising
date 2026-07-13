@@ -1,5 +1,6 @@
 # Arch Linux archiso packages file
 # Packages to include in the live environment
+# Endeavour OS Privacy Edition with KDE Plasma - Gaming Optimized
 
 # Base system
 base
@@ -63,6 +64,56 @@ thunderbird
 keepass
 vlc
 
+# Gaming - Graphics & Drivers
+mesa
+lib32-mesa
+vulkan-radeon
+lib32-vulkan-radeon
+vulkan-intel
+lib32-vulkan-intel
+nvidia-utils
+lib32-nvidia-utils
+nvidia-dkms
+opencl-nvidia
+lib32-opencl-nvidia
+libva
+lib32-libva
+
+# Gaming - Libraries & Frameworks
+sdl2
+lib32-sdl2
+sdl
+lib32-sdl
+glfw-x11
+lib32-glfw-x11
+openal
+lib32-openal
+jack2
+lib32-jack2
+alsa-lib
+lib32-alsa-lib
+
+# Gaming - Tools & Launchers
+steam
+proton
+proton-ge-custom
+gamescope
+mangohud
+lib32-mangohud
+goverlay
+lutris
+wine
+wine-mono
+winetricks
+
+# Performance & Monitoring
+btop
+htop
+iotop
+powertop
+thermald
+cpupower
+
 # Network
 networkmanager
 networkmanager-openvpn
@@ -98,7 +149,6 @@ bash
 zsh
 sysstat
 lsof
-btop
 tar
 unzip
 zip
